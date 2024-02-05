@@ -1,0 +1,14 @@
+<!-- Q1l -->
+"DOCTYPE html"
+
+<!--  Q2-->
+"quirks mode"
+
+<!--Q3-->
+"NO"
+
+<!--Q4-->
+" No h2 first then h3"
+
+<!-- Q5s  -->
+"Headers"

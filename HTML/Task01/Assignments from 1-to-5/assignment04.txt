@@ -1,0 +1,19 @@
+<head>
+<!--
+For Defining The Content Encoding
+Support Arabic Chars
+-->
+<meta charset="UTF-8" />
+<!--
+add description to the page
+-->
+<meta name="description" content="ex">
+<!-- 
+    Define the author of a page
+  -->
+<meta name="author" content="John Doe">
+<!-- 
+    Refresh document every 30 seconds 
+-->
+<meta http-equiv="refresh" content="30">
+</head>
