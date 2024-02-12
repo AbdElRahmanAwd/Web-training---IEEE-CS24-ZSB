@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="test.py" method="post">
+            <label for="mail">Email</label>
+            <br>
+            <input id="mail" type="email" placeholder="@gmail.com" required name="mail">
+            <hr>
+            <label for="mob">Mobile</label>
+            <br>
+            <input id="mob" type="tel" value="+0100(454)56"   name="phone">
+            <hr>
+            <label for="pass">Password</label>
+            <br>
+            <input id="pass" type="password" placeholder="..A4&@"   name="pass">
+            <hr>
+            <label for="usr">Username</label>
+            <br>
+            <input id="usr" type="text" placeholder="Username"   name="usernam" required>
+            <hr>
+            <label for="sub">Subject</label>
+            <br>
+            <input id="sub" type="text"    name="sub">
+            <input type="text" name="college" hidden value="Zagazig">
+            <hr>
+            <input type="reset" value="Empty Form">
+            <input type="submit" value="Send Data">
+    </form>
+</body>
+</html>
