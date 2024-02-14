@@ -1,0 +1,12 @@
+div {
+    max-width: 400px;
+    max-height: 40px;
+    width: fit-content;
+    background-color: rgb(150, 41, 41);
+    padding: 15px;
+    margin: 10px 10px;
+}
+
+.last {
+    overflow-y: hidden;
+}
