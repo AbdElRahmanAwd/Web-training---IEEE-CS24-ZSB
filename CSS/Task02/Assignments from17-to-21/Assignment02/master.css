@@ -1,0 +1,15 @@
+* {
+    font-family: sans-serif;
+}
+
+.one {
+    text-transform: uppercase;
+}
+
+.two {
+    text-transform: capitalize;
+}
+
+.three {
+    text-transform: lowercase;
+}
