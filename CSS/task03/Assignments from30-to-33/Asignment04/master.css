@@ -1,0 +1,47 @@
+table {
+    margin: 20px auto;
+    width: 700px;
+    font-family: sans-serif;
+    border-bottom: solid 2px #40B0A6;
+    border-spacing: 1px;
+}
+
+caption {
+    margin: 10px;
+    font-weight: bold;
+}
+
+img {
+    width: 50px;
+    border: solid 2px white;
+    outline: solid 1px rgb(111, 111, 111);
+}
+
+th {
+    background-color: #404040;
+    color: white;
+    padding: 15px;
+}
+
+
+td {
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+}
+
+button{
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+    color: white;
+}
+
+.view {
+    background-color: rgb(42, 194, 194);
+}
+
+.Delete {
+    background-color: red;
+}

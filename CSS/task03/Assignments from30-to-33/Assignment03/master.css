@@ -1,0 +1,20 @@
+.parent > li {
+  background-color: #eee;
+  margin: 10px auto;
+  width: 400px;
+  padding: 10px;
+  list-style: none;
+}
+
+ol li {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.js ul li {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  list-style-position: inside;
+}

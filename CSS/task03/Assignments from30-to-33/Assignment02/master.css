@@ -1,0 +1,45 @@
+div {
+  margin: 40px auto;
+  width: 400px;
+  background-color: bisque;
+  padding: 20px;
+  border-top: solid 2px red;
+  border-bottom: solid 2px red;
+  border-right: solid 2px blue;
+  border-left: solid 2px blue;
+  position: relative;
+}
+
+span {
+  position: absolute;
+  background-color: blue;
+  padding: 0 8px;
+  color: white;
+}
+
+.top-left {
+  top: -10px;
+  left: -14px;
+  border-right: solid 2px red;
+}
+
+.top-right {
+  top: -10px;
+  left: 430px;
+  border-left: solid 2px red;
+
+}
+
+.bottom-left {
+  top: calc(100% - 10px);
+  left: -14px;
+  border-right: solid 2px red;
+}
+
+.bottom-right {
+  top: calc(100% - 10px);
+  left: calc(100% - 14px);
+  border-left: solid 2px red;
+
+}
+
