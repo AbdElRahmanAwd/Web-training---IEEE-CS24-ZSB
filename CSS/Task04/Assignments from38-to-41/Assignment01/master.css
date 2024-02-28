@@ -1,0 +1,39 @@
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    display: inline-block;
+    margin: 30px ;
+    border-radius: 50%;
+    border: solid 3px;
+    box-shadow: 5px 5px  #2196F3,
+    -5px -5px #E91E63;
+    position: relative;
+    font-weight: bold;
+    font-family: sans-serif;
+    counter-increment: circul_number;
+}
+
+div::after {
+    content: 'Element';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+div::before {
+    content: counter(circul_number);
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    top: -15px;
+    left: 35px;
+}

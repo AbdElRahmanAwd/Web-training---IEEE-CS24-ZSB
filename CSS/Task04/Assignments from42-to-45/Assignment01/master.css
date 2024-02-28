@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    background-color: #f6f6f6;
+    margin: calc(50vh - 100px) auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .5s;
+}
+
+p {
+    width: 90%;
+    padding: 20px;
+}
+
+.down {
+    background-color: #ddd;
+    transition: all .5s .5s;
+}
+
+.parent:hover {
+    margin-top: calc(50vh - 150px);
+}
+
+.parent:hover .down {
+    margin-top: 30px;
+}
+
