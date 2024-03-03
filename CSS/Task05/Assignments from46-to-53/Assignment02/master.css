@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  background-color: #eee;
+  width: 600px;
+  height: 300px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: space-between;
+}
+
+.parent div {
+  width: calc(540px / 3);
+  background-color: rgb(244, 67, 54);
+  margin: 15px 0 15px 0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}

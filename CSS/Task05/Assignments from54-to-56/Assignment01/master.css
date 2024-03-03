@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+div {
+    width: 600px;
+    height: 130px;
+    line-height: 130px;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 5px;
+    background-image: linear-gradient(
+    to right,
+    red 20%,
+    #2196f3 20%,
+    #2196f3 40%,
+    green 40%,
+    green 60%,
+    #e91e63 60%,
+    #e91e63 80%,
+    #673ab7 80%
+  );
+  position: relative;
+  z-index: 0;
+}
+
+div::first-letter{
+    color: red;
+}
+
+div::after {
+    content:'';
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #eee;
+    width: 580px;
+    height: 110px;
+    z-index: -1;
+}

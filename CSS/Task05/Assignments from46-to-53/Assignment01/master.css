@@ -1,0 +1,15 @@
+div {
+  width: 100px;
+  height: 100px;
+  margin: calc(50vh - 50px) auto;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: rgb(255, 87, 34);
+  box-shadow: 5px 0 rgb(255, 87, 34), -5px 0 rgb(3, 169, 244);
+}

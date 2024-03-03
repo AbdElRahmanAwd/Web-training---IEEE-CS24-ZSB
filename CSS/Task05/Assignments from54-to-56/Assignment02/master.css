@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+div {
+    width: 600px;
+    padding: 20px;
+    background-color: #eee;
+    margin: 20px auto;
+    font-weight: bold;
+    caret-color: red;
+    position: relative;
+}
+
+div::after {
+    content: '';
+    width: inherit;
+    position: absolute;
+    height: 4px;
+    background-image: linear-gradient(to right,
+    rgb(0,150,136) 50%,
+    rgb(244,67,54) 50%);
+    bottom: -4px;
+    left: 0;
+}
+
+.two , .three {
+    color: rgba(0, 0, 0, 0.5);
+}
