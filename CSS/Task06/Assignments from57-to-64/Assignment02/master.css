@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.layout {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template: 10% 80% 10% / 2fr 1fr;
+}
+
+.layout > * {
+  padding: 20px;
+  color: white;
+}
+
+header {
+  background-color: rgb(3, 169, 244);
+  grid-column: span 2;
+}
+
+header::after {
+  content: "Header";
+}
+
+section {
+  background-color: rgb(255, 87, 34);
+}
+
+section::after {
+  content: "Section";
+}
+
+aside {
+  background-color: rgb(96, 125, 139);
+}
+
+aside::after {
+  content: "Aside";
+}
+
+footer {
+  background-color: rgb(0, 150, 136);
+  grid-column: span 2;
+}
+
+footer::after {
+  content: "Footer";
+}

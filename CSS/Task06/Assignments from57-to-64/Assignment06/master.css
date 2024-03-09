@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.layout {
+    background-color: #eee;
+    padding: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template: repeat(4,auto) / repeat(4,1fr);
+}
+
+.layout > div {
+    padding: 20px;
+    border-bottom: solid 3px red;
+    position: relative;
+}
+
+.layout > div::after {
+    content: '"';
+    position: absolute;
+    right: 10px;
+    bottom: -15px;
+    opacity: .3;
+    font-size: 40px;
+    rotate: 10deg;
+}
+
+.layout > div > div {
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.descrip , .name{
+    font-weight: bold;
+}
+.name {
+    font-size: 17px;
+}
+
+.jop , .instr {
+    font-size: 14px;
+}
+
+.jop {
+    opacity: .5;
+}
+
+
+
+.one , .two , .four , .six , .seven , .nine
+, .ten {
+    background-color: white;
+}
+
+.three , .five , .eight {
+    background-color: black;
+    color: white;
+}
+
+.one {
+    grid-column: span 2;
+}
+
+.three {
+    grid-row: span 3;
+}
+
+.four {
+    grid-row: span 2;
+}
+
+.five , .six {
+    grid-column: span 2;
+}

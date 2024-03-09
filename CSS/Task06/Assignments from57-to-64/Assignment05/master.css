@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    margin: 30px auto;
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    gap: 20px;
+    grid-template: repeat(2,auto) / repeat(2,auto);
+    align-content: space-between;
+    
+}
+
+.grid > div {
+    background-color: rgb(233,30,99);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}

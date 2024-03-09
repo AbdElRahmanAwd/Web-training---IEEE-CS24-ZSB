@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  font-family: Roboto;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.sections {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+header {
+  padding: 10px;
+}
+
+ul {
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  float: left;
+  margin-right: 30px;
+}
+
+.home a {
+  color: #00c7fc;
+}
+
+a:hover {
+  color: #00c7fc;
+}
+
+section {
+  float: left;
+  position: relative;
+  top: 35%;
+  height: 100%;
+  text-align: center;
+}
+
+section p {
+  color: #00c7fc;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section div {
+  position: relative;
+  left: calc(50% - 250px);
+  width: 40%;
+  color: white;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #00c7fc;
+}
+
+footer {
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+}
+
+footer .head {
+  font-size: 25px;
+}
+
+footer > div {
+  position: relative;
+  width: fit-content;
+  left: calc(50% - 200px);
+  margin: 50px 0 ;
+}
+
+footer .txt {
+  position: relative;
+  left: calc(50% - 250px);
+  width: 500px;
+  margin-bottom: 40px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+footer div p {
+  position: absolute;
+  font-weight: bold;
+  top: -25px;
+}
+
+footer div div {
+  height: 20px;
+  width: 400px;
+  background-color: #ddd;
+}
+
+div.adobe {
+  background-image: linear-gradient(to right, #00c7fc 90%, #ddd 90%);
+}
+
+div.html {
+  background-image: linear-gradient(to right, #00c7fc 80%, #ddd 80%);
+}
+
+div.js {
+  background-image: linear-gradient(to right, #00c7fc 75%, #ddd 75%);
+}
+
+div.php {
+  background-image: linear-gradient(to right, #00c7fc 20%, #ddd 20%);
+}
+
+p.adobe::after {
+  content: "90%";
+  background-color: black;
+  font-size: small;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  left: 340px;
+  top: -5px;
+  border-radius: 10%;
+}
+
+p.html::after {
+  content: "80%";
+  background-color: black;
+  font-size: small;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  left: 300px;
+  top: -5px;
+  border-radius: 10%;
+}
+
+p.js::after {
+  content: "75%";
+  background-color: black;
+  font-size: small;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  left: 280px;
+  top: -5px;
+  border-radius: 10%;
+}
+
+p.php::after {
+  content: "20%";
+  background-color: black;
+  font-size: small;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  left: 60px;
+  top: -5px;
+  border-radius: 10%;
+}
+
+p.adobe::before {
+  content: "";
+  border: solid 5px;
+  border-color: black transparent transparent transparent;
+  position: absolute;
+  left: 354px;
+  top: 20px;
+}
+
+p.html::before {
+  content: "";
+  border: solid 5px;
+  border-color: black transparent transparent transparent;
+  position: absolute;
+  left: 314px;
+  top: 20px;
+}
+
+p.js::before {
+  content: "";
+  border: solid 5px;
+  border-color: black transparent transparent transparent;
+  position: absolute;
+  left: 294px;
+  top: 20px;
+}
+
+p.php::before {
+  content: "";
+  border: solid 5px;
+  border-color: black transparent transparent transparent;
+  position: absolute;
+  left: 74px;
+  top: 20px;
+}
