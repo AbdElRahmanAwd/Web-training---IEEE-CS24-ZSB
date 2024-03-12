@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.parent  {
+    margin: 30px auto;
+    width: 90%;
+    display: grid;
+    grid-template: 1fr/ repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.parent > div {
+    background-color: #eee;
+    text-align: center;
+    padding: 15px;
+}
+
+div > p {
+    padding-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(9,153,140);
+}
+
+@media (max-width: 470px) {
+    .parent {
+        grid-template: repeat(4, 1fr) / 1fr;
+    }
+    div > p {
+        color:rgb(6,6,6) ;
+    }
+}
+
+@media (min-width: 471px) and (max-width:760px) {
+    .parent {
+        grid-template: repeat(2, 1fr) /repeat(2, 1fr);
+    }
+    div >p {
+        color: red;
+    }
+}

@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.parent  {
+    margin: 30px auto;
+    width: 90%;
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr;
+    gap: 20px;
+    justify-content: center;
+}
+
+.parent > div {
+    background-color: #eee;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+div > p {
+    padding-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+    color:rgb(6,6,6) ;
+}
+
+
+@media (min-width: 471px) and (max-width:760px) {
+    .parent {
+        grid-template: repeat(2, 1fr) /repeat(3, 1fr);
+    }
+    .one{
+        grid-column: span 3;
+    }
+    div >p {
+        color: red;
+    }
+}
+
+@media (min-width: 761px) {
+    .parent{
+        grid-template: repeat(3,1fr) / repeat(2, 1fr);
+    }
+    .one , .four {
+        grid-column: span 2;
+    }
+    div > p {
+        color: rgb(9,153,140);
+    }
+}
