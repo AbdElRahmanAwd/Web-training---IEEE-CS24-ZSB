@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // NOt work because the code run line by line and script part before the element
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // It works because we use window.onload that load the page first then do the script part
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // it works because the code run line by line and script part After the element
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
