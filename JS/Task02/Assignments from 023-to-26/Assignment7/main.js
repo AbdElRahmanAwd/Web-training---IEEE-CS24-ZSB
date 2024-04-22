@@ -1,0 +1,1 @@
+console.log(+(4 * Math.random()).toFixed()); // 0 || 1 || 2 || 3 || 4
