@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .popup {
+            visibility: hidden;
+            position: relative;
+            top: 20px;
+            left: 10px;
+            display: inline-block;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            background-color: #ddd;
+        }
+
+        span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+        }
+
+        span::after {
+            content: "/";
+            position: absolute;
+            line-height: 20px;
+            color: white;
+            font-weight: bold;
+
+            top: 0;
+            right: 0;
+            transform: translate(10px, -10px);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+
+        span::before {
+            content: "\\";
+            position: absolute;
+            line-height: 20px;
+            color: white;
+            font-weight: bold;
+            top: 0;
+            right: 0;
+            transform: translate(10px, -10px);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="main.js"></script>
+</body>
+
+</html>

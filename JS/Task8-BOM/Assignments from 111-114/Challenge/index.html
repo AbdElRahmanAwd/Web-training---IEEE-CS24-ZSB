@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 500px;
+            margin: 10px auto;
+        }
+
+        .grid {
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        form,
+        .tasks {
+            background-color: #eee !important;
+            padding: 20px !important;
+            margin-top: 30px !important;
+        }
+
+
+
+        .input {
+            padding: 10px;
+            border: outset;
+            border-radius: 5px;
+        }
+
+        .add {
+            display: inline-block;
+            background-color: brown;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="grid" action="">
+            <input type="text" class="input">
+            <input type="submit" class="add" value="Add Task">
+        </form>
+        <div class="tasks"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
