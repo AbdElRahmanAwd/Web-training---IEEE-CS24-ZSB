@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Learn JavaScript</title>
+    <script>
+        function elzero() {
+            let link = document.getElementsByClassName('open');
+            for (let i = 0; i < link.length; i++)
+                if (link[i].innerHTML === 'Elzero')
+                    return link[i].getAttribute('href');
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            window.location.assign(elzero());
+        });
+    </script>
+</head>
+
+<body>
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+</body>
+
+</html>

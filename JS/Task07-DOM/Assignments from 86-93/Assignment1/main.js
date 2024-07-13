@@ -1,0 +1,16 @@
+let eleById = document.getElementById("elzero");
+let eleByClass = document.getElementsByClassName("element");
+let eleByTag = document.getElementsByTagName("div");
+let eleByName = document.getElementsByName("js");
+let eleByQuery1 = document.querySelector("div");
+let eleByQuery2 = document.querySelector(".element");
+let eleByQuery3 = document.querySelector(" #elzero ");
+let eleByQuery4 = document.querySelector("div[name]");
+let eleByQueryS1 = document.querySelectorAll("div")[0];
+let eleByQueryS2 = document.querySelectorAll("#elzero")[0];
+let eleByQueryS3 = document.querySelectorAll(".element")[0];
+let eleByQueryS4 = document.querySelectorAll("div[name]")[0];
+let eleByBody = document.body.children[0];
+let eleByBody2 = document.body.childNodes[1];
+let eleByBody3 = document.body.firstElementChild;
+console.log(eleByBody3);
